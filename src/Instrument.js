@@ -23,6 +23,7 @@ const Instrument = ({
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("keyup", handleKeyUp);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getNoteFromKeyboardKey = keyboardKey => {
